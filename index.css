@@ -1,0 +1,114 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+.info {
+    display: none;
+}
+
+.edit-icon,
+.delete-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-input {
+    outline: none;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.correct,.correct:focus {
+    outline: 2px solid green;
+}
+
+body {
+    background-color: #cbd5e1;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    border: solid #94a3b8;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 27%;
+}
+
+.form-input-container {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-btn {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+#list {
+    border: solid #94a3b8;
+    display: flex;
+    flex-direction: column;
+    width: 57%;
+    align-items: center;
+    max-height: 18rem;
+    object-fit: cover;
+    gap: 2rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-left: 21%;
+}
+
+.contact {
+    border: solid #94a3b8;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: green;
+    color: white;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    #form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    #list {
+    width: 100%;
+    margin: 0 auto;
+    max-height: none;
+    overflow: auto;
+}
+
+    .contact {
+    justify-content: space-between;
+    }
+}
